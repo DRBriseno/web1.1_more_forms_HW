@@ -1,0 +1,71 @@
+body {
+    font-family: Comic Sans, Comic Sans MS, cursive;;
+    text-align: center;
+    background: rgb(76,163,221);
+   background: #060606;
+ 
+}
+
+#main {
+    height: 750px;
+    width: 450px;
+    margin: 300px auto;
+    background: linear-gradient(#005073, #71c7ec);
+    box-shadow: 0 0 3px rgba(16,125,172);
+    border-radius: 40px;
+
+}
+
+h1 {
+    background: rgb(16,125,172);
+    color: white;
+    margin: 5;
+    padding: 15px 100px;
+    text-transform: lowercase;
+    font-size: 60px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+button {
+    text-transform: lowercase;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    background: rgb(255,64,64);
+    border-radius: 20px;
+    width: 300px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+}
+  
+button:hover {
+    background: #990000;
+    border-bottom-color: #333333;
+}
+  
+button:active {
+    position: relative;
+    top: 4px;
+}
+#totalTip {
+  font-size: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  text-transform: lowercase;
+}
+
+#totalTip small {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+}
