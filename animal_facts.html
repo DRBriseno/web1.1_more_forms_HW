@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Animal Facts
+{% endblock %}
+
+{% block content %}
+<h1>Animal Facts</h1>
+<form action="/animal_facts" method="GET">
+    <fieldset>
+        <legend>Your Info:</legend>
+
+        <label>
+            Which animal do you want facts on?
+        {% for animal in animals %}
+        <select name="animal">
+                <option value="koala">koala</option>
+                <option value="parrot">parrot</option>
+                <option value="mantis shrimp">mantis_shrimp</option>
+                <option value="lion">lion</option>
+                <option value="narwhal">narwhal</option>
+         {% endfor %}
+        </select>
+        </label>
+        <input type="submit" value="Get Fact!">
+      </fieldset>
+</form>
+{% endblock %}

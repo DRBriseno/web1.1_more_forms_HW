@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Animal Results
+{% endblock %}
+
+{% block content %}
+<h1>Animal Results</h1>
+<form action="/animal_results" method="GET">
+    <section id="form_results">
+     {% if animal != 'None' %}
+    <p>
+        Here is your {{animal}} fact:
+    </p>
+    <p>
+        <em>{{animal_to_fact[animal]}}</em>
+     {% endif %}
+    </p>
+</section>
+
+{% endblock %}
+
+
+
+    
+

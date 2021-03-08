@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Image Results
+{% endblock %}
+
+{% block content %}
+<h1>Image results</h1>
+<form action="/image_results" method="POST">
+        {% if image_url %}
+<section id="image_results">
+             <p>
+        Here is your filtered image:
+    </p>
+    <p>
+        image_url = f'./static/images/{image.filename}'
+    </p>
+</section>
+    {% endif %}
+        </select>
+    </label>
+    <br>
+</form>
+{% endblock %}
